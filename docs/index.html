@@ -1,72 +1,31 @@
-<!--This is a comment tag. Tags are used to define layouts for webpages. The tags tell the browser how it should look and what content it should show-->
-
-<!--doctype tag - tells the browser that the document is html, in this case-->
-
 <!DOCTYPE html>
 
-<!--Container tag - there are two tags with other tags in between (contained within them). The following container tag is <html> and ends at </html>. It is usually the highest level tag in a website-->
-
-<!-- head tags and body tags: they are the two basic sections, head and body. Head tags define data about the document (title, description, image associated, other attributes, import resources (other files)). Body tags contain all the content (they are much bigger) and is rendered by the browser-->
-
-<!---->
-
 <html>
-	<head>
-		
-		<!--meta tags defines metadata (attributes) about the website. In this case, we define the character set for the website, what characters to use. Meta with name description houses the description for the website, which is used by google to display in search results, for example-->
-
+	<head>		
 		<meta charset="UTF-8">
-
 		<meta name="description" content="UM FUCKING WEBSITE, HOLY SHIT">
-
-		<!-- title tag is for content, not containing. Has the website's title, that shows in the tab-->
-
 		<title> FUCKING WEBSITE </title>
-
-
-
 	</head>
-	<!-- body style is used for changing background colour, margin, font and font size and weight, among other things -->
+	<style>
+		
+          body{
+                   color:#000;
+                   background-color:#fff;
+                   width:100%; /*The body is naturally a 100% of the browser window space, but let us just write it to make sure */
+          }
+
+           #container{
+                  /*Styling for any element with the id="container" */
+                         width:92%; /* The width is liquid by screen-percentage*/
+                         height:80%; /* The height is liquid by screen-percentage*/
+                         color:#fff;
+                         background-color:white;
+            }
+          </style>
+	
 	<body style="background-color: white; font-family: papyrus; color: yellow; margin: 0">
-		<!--h number defines header number. Header is a title for a text section. The number corresponds to the size of the header. Higher numbers mean the header is less important, and is smaller. They work like title and subtitles in word. 6 is the smallest-->
-
-		
-		<!--
-
-		<h1>UM FUCKING WEBSITE</h1>
-		<h2>Holy shit</h2>
-		<h3>Holy shit</h3>
-		<h4>Holy shit</h4>
-		<h5>Holy shit</h5>
-		<h6>Holy shit</h6>
-		-->
-
-
-		<!-- <p> paragraph tag -->
-		<!--<b> is bold. <i> is italic. -->
-		<!--<br/> for a break-->
-		<!--<hr/> horizontal rule, creates a separating line-->
-		<!--both <br/> and <hr/> are single tags, meaning they open and close in a single tag. They all have a closing bar at the end-->
-		<!--<big> makes text slightly bigger. <small> also works, for making it smaller-->
-		<!-- <sub> for subscript <sup> for superscript-->
-		
-		<!--
-		<p>Fiz um fucking website...</p>
-
-		<p><i>Fiz</i> um</p>
-		<br/>
-		<p><big><b>FUCKING</b></big>
-		<br/>
-		<b>WEBSITE</b></p>
-		<br/>
-		<p>MOTHERFUCKERS<p>
-
-		<h1 style="color:blue;"> I DID IT </h1>
-		<p style="color: red; background-color: green"> AND I DID IT ALL BY MYSELF, <small> obviously <small> </p>
-
-		-->
-			
-		<img src="https://i.pinimg.com/originals/8e/14/55/8e145599d4847e339828787162952035.gif" alt="oops, no image"\>
-
+		<div id="container">
+               				<img src="https://i.pinimg.com/originals/8e/14/55/8e145599d4847e339828787162952035.gif" alt="oops, no image"\>  
+	        </div>
 	</body>	
 </html>
